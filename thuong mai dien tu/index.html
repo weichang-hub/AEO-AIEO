@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  
+
+  <!-- ============================================================
+       SEO CƠ BẢN
+  ============================================================ -->
+  <title>AEO & AIEO là gì? Kỹ thuật tối ưu AI Search 2025 | SEO Academy VN</title>
+  <meta name="description"
+    content="Tìm hiểu AEO (Answer Engine Optimization) và AIEO (AI Engine Optimization) – hai kỹ thuật SEO thế hệ mới giúp website xuất hiện trên Google SGE, ChatGPT, Perplexity và các AI search engine." />
+  <meta name="keywords"
+    content="AEO, AIEO, Answer Engine Optimization, AI Engine Optimization, SGE, Google AI Overview, SEO 2025, tối ưu AI search" />
+  <meta name="author" content="SEO Academy VN" />
+  <link rel="canonical" href="https://seo-academy.example.vn/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://seo-academy.example.vn/" />
+  <meta property="og:title" content="AEO & AIEO – Tối ưu cho AI Search Engine 2025" />
+  <meta property="og:description"
+    content="Hướng dẫn toàn diện về AEO và AIEO: khái niệm, kỹ thuật triển khai, ví dụ thực tế để website của bạn được AI trích dẫn." />
+  <meta property="og:image" content="https://seo-academy.example.vn/og-image.jpg" />
+  <meta property="og:locale" content="vi_VN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AEO & AIEO – Tối ưu cho AI Search Engine 2025" />
+  <meta name="twitter:description"
+    content="Hướng dẫn toàn diện về AEO và AIEO: khái niệm, kỹ thuật triển khai, ví dụ thực tế." />
+
+  <!-- ============================================================
+       SCHEMA MARKUP – AEO/AIEO CORE TECHNIQUE
+       Structured Data giúp AI engines đọc & trích dẫn nội dung
+  ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://seo-academy.example.vn/#website",
+        "url": "https://seo-academy.example.vn/",
+        "name": "SEO Academy VN",
+        "description": "Nền tảng học SEO, AEO, AIEO cho thị trường Việt Nam",
+        "inLanguage": "vi",
+        "publisher": { "@id": "https://seo-academy.example.vn/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://seo-academy.example.vn/#organization",
+        "name": "SEO Academy VN",
+        "url": "https://seo-academy.example.vn/",
+        "logo": { "@type": "ImageObject", "url": "https://seo-academy.example.vn/logo.png" }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://seo-academy.example.vn/#article",
+        "headline": "AEO và AIEO là gì? Kỹ thuật tối ưu cho AI Search Engine 2025",
+        "description": "Hướng dẫn toàn diện về Answer Engine Optimization và AI Engine Optimization",
+        "author": { "@type": "Organization", "name": "SEO Academy VN" },
+        "datePublished": "2025-01-01",
+        "dateModified": "2025-05-18",
+        "inLanguage": "vi",
+        "isPartOf": { "@id": "https://seo-academy.example.vn/#website" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "AEO là gì?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AEO (Answer Engine Optimization) là kỹ thuật tối ưu hóa nội dung website để được trích dẫn trực tiếp trong phần trả lời của các search engine như Google Featured Snippets, Bing Answer Box. Mục tiêu là cung cấp câu trả lời rõ ràng, súc tích để engine có thể hiểu và hiển thị ngay."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "AIEO là gì?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AIEO (AI Engine Optimization) là phiên bản tiến hóa của AEO, tập trung vào việc tối ưu nội dung để được các mô hình AI như ChatGPT, Google SGE (AI Overviews), Perplexity AI, Claude trích dẫn khi trả lời câu hỏi của người dùng."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Sự khác nhau giữa SEO, AEO và AIEO là gì?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SEO tối ưu cho thuật toán xếp hạng link truyền thống. AEO tối ưu để được trích dẫn trong Answer Box và Featured Snippets. AIEO tối ưu để AI Language Models trích dẫn nội dung khi tổng hợp câu trả lời cho người dùng."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Làm thế nào để áp dụng AIEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Để áp dụng AIEO: (1) Sử dụng Schema Markup đầy đủ, (2) Viết nội dung dạng Q&A rõ ràng, (3) Xây dựng E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness), (4) Tối ưu Core Web Vitals, (5) Tạo nội dung dài, chuyên sâu có cấu trúc heading rõ ràng, (6) Được trích dẫn từ các nguồn uy tín."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "Cách triển khai AIEO cho website",
+        "description": "Hướng dẫn từng bước triển khai AI Engine Optimization",
+        "step": [
+          { "@type": "HowToStep", "position": 1, "name": "Nghiên cứu câu hỏi người dùng", "text": "Dùng công cụ như AnswerThePublic, AlsoAsked để tìm câu hỏi thực tế." },
+          { "@type": "HowToStep", "position": 2, "name": "Cấu trúc nội dung dạng Q&A", "text": "Viết heading dạng câu hỏi, trả lời súc tích trong 40–60 từ ngay đầu đoạn." },
+          { "@type": "HowToStep", "position": 3, "name": "Thêm Schema Markup", "text": "Implement FAQPage, HowTo, Article schema để AI engines parse dễ dàng." },
+          { "@type": "HowToStep", "position": 4, "name": "Xây dựng E-E-A-T", "text": "Hiển thị thông tin tác giả, trích dẫn nguồn uy tín, cập nhật nội dung định kỳ." },
+          { "@type": "HowToStep", "position": 5, "name": "Tối ưu tốc độ tải trang", "text": "Đảm bảo LCP < 2.5s, CLS < 0.1, FID < 100ms." }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://seo-academy.example.vn/" },
+      { "@type": "ListItem", "position": 2, "name": "AEO & AIEO", "item": "https://seo-academy.example.vn/aeo-aieo/" }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ========================================================
+       NAV
+  ======================================================== -->
+  <nav aria-label="Navigation chính">
+    <div class="nav-inner">
+      <a class="logo" href="#"><span class="logo-dot"></span>SEO Academy VN</a>
+      <ul class="nav-links">
+        <li><a href="#khai-niem">Khái niệm</a></li>
+        <li><a href="#so-sanh">So sánh</a></li>
+        <li><a href="#ky-thuat">Kỹ thuật</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#trien-khai">Triển khai</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========================================================
+       HERO
+  ======================================================== -->
+  <section>
+    <div class="container">
+      <div class="hero">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Bài tập 04 · SEO Nâng cao 2025</p>
+          <h1>AEO & AIEO<br/>Tương lai của<br/>tìm kiếm AI</h1>
+          <p class="hero-desc">
+            Từ Featured Snippets đến Google AI Overviews, ChatGPT, Perplexity —
+            học cách tối ưu website để AI <em>trích dẫn</em> bạn thay vì đối thủ.
+          </p>
+          <div class="hero-ctas">
+            <a href="#ky-thuat" class="btn btn-primary">Xem kỹ thuật →</a>
+            <a href="#trien-khai" class="btn btn-outline">Checklist triển khai</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <span class="code-line"><span class="code-op">// Schema FAQPage – AEO core</span></span>
+          <span class="code-line"><span class="code-op">{</span></span>
+          <span class="code-line">  <span class="code-key">"@type"</span>: <span class="code-str">"FAQPage"</span>,</span>
+          <span class="code-line">  <span class="code-key">"mainEntity"</span>: [<span class="code-op">{</span></span>
+          <span class="code-line">    <span class="code-key">"@type"</span>: <span class="code-str">"Question"</span>,</span>
+          <span class="code-line">    <span class="code-key">"name"</span>: <span class="code-str">"AEO là gì?"</span>,</span>
+          <span class="code-line">    <span class="code-key">"acceptedAnswer"</span>: <span class="code-op">{</span></span>
+          <span class="code-line">      <span class="code-key">"@type"</span>: <span class="code-str">"Answer"</span>,</span>
+          <span class="code-line">      <span class="code-key">"text"</span>: <span class="code-str">"Tối ưu cho</span></span>
+          <span class="code-line"><span class="code-str">        Answer Engines..."</span></span>
+          <span class="code-line">    <span class="code-op">}</span></span>
+          <span class="code-line">  <span class="code-op">}]</span></span>
+          <span class="code-line"><span class="code-op">}</span><span class="cursor"></span></span>
+          <br/>
+          <span class="code-line"><span class="code-op">// Core Web Vitals target</span></span>
+          <span class="code-line"><span class="code-key">LCP</span> <span class="code-val">1.8s</span> ✓  <span class="code-key">CLS</span> <span class="code-val">0.05</span> ✓</span>
+          <span class="code-line"><span class="code-key">FID</span> <span class="code-val">42ms</span> ✓  <span class="code-key">INP</span> <span class="code-val">180ms</span> ✓</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       STATS
+  ======================================================== -->
+  <div class="stats-bar" aria-label="Thống kê quan trọng">
+    <div class="stats-grid container" style="padding:0 24px;">
+      <div class="stat-item">
+        <div class="stat-num">58%</div>
+        <div class="stat-label">tìm kiếm kết thúc không click (zero-click)</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">90%</div>
+        <div class="stat-label">AI Overviews dùng nguồn trong top 10 organic</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3×</div>
+        <div class="stat-label">tỷ lệ trích dẫn khi có Schema Markup đầy đủ</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">2025</div>
+        <div class="stat-label">năm AIEO trở thành tiêu chuẩn mới</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       KHÁI NIỆM
+  ======================================================== -->
+  <section id="khai-niem">
+    <div class="container">
+      <p class="section-label">Khái niệm cơ bản</p>
+      <h2>AEO, AIEO và SEO<br/>là gì?</h2>
+
+      <!-- Nội dung dạng Q&A — cấu trúc AEO cốt lõi -->
+      <div style="margin-top:40px; display:grid; gap:24px;" class="fade-in">
+
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:32px;">
+          <div itemscope itemtype="https://schema.org/Question">
+            <h3 itemprop="name">🔵 SEO (Search Engine Optimization) là gì?</h3>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <p itemprop="text" style="margin-top:12px;color:var(--muted);">
+                <strong>SEO truyền thống</strong> tối ưu website để xếp hạng cao trên trang kết quả tìm kiếm (SERP).
+                Mục tiêu là người dùng <em>click vào link</em> của bạn. Các yếu tố gồm: từ khóa, backlink, tốc độ trang, trải nghiệm người dùng.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:32px;">
+          <div itemscope itemtype="https://schema.org/Question">
+            <h3 itemprop="name">🟢 AEO (Answer Engine Optimization) là gì?</h3>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <p itemprop="text" style="margin-top:12px;color:var(--muted);">
+                <strong>AEO</strong> là kỹ thuật tối ưu nội dung để được trích dẫn trực tiếp trong <strong>Featured Snippets</strong>,
+                <strong>People Also Ask</strong>, <strong>Answer Boxes</strong> của Google và Bing.
+                Nội dung phải trả lời câu hỏi cụ thể, súc tích (40–60 từ), được cấu trúc rõ ràng để engine đọc tự động.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:32px;">
+          <div itemscope itemtype="https://schema.org/Question">
+            <h3 itemprop="name">🟡 AIEO (AI Engine Optimization) là gì?</h3>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <p itemprop="text" style="margin-top:12px;color:var(--muted);">
+                <strong>AIEO</strong> là phiên bản tiến hóa của AEO, tập trung vào việc tối ưu nội dung để
+                <strong>các mô hình AI</strong> như ChatGPT, Google SGE (AI Overviews), Perplexity AI, Claude, Gemini
+                <strong>trích dẫn và tổng hợp</strong> từ website của bạn khi trả lời câu hỏi người dùng.
+                AIEO đòi hỏi E-E-A-T mạnh, Schema Markup đầy đủ, nội dung chuyên sâu và độ uy tín cao.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SO SÁNH
+  ======================================================== -->
+  <section id="so-sanh" style="background:var(--cream);">
+    <div class="container">
+      <p class="section-label">Phân tích</p>
+      <h2>SEO vs AEO vs AIEO<br/>So sánh toàn diện</h2>
+
+      <div class="table-wrap fade-in">
+        <table>
+          <thead>
+            <tr>
+              <th>Tiêu chí</th>
+              <th><span class="tag tag-seo">SEO</span></th>
+              <th><span class="tag tag-aeo">AEO</span></th>
+              <th><span class="tag tag-aieo">AIEO</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mục tiêu chính</td>
+              <td>Xếp hạng SERP, tăng click</td>
+              <td>Xuất hiện trong Answer Box / Featured Snippet</td>
+              <td>Được AI trích dẫn khi tổng hợp câu trả lời</td>
+            </tr>
+            <tr>
+              <td>Định dạng nội dung</td>
+              <td>Long-form, từ khóa tối ưu</td>
+              <td>Q&A ngắn gọn, bullet points, bảng biểu</td>
+              <td>Chuyên sâu, đa chiều, có dữ liệu, trích dẫn nguồn</td>
+            </tr>
+            <tr>
+              <td>Kỹ thuật chính</td>
+              <td>On-page SEO, backlinks, Core Web Vitals</td>
+              <td>Schema FAQPage, HowTo, định dạng rõ ràng</td>
+              <td>E-E-A-T, Schema đầy đủ, được báo chí/wiki trích dẫn</td>
+            </tr>
+            <tr>
+              <td>Nền tảng mục tiêu</td>
+              <td>Google, Bing, Cốc Cốc</td>
+              <td>Google Featured Snippets, Bing Answer Box</td>
+              <td>Google AI Overviews, ChatGPT, Perplexity, Claude</td>
+            </tr>
+            <tr>
+              <td>Thước đo thành công</td>
+              <td>Ranking, CTR, Organic Traffic</td>
+              <td>Snippet Ownership Rate, PAA Appearances</td>
+              <td>AI Citation Rate, Brand Mentions trong AI responses</td>
+            </tr>
+            <tr>
+              <td>Mức độ khó</td>
+              <td>⭐⭐⭐</td>
+              <td>⭐⭐⭐⭐</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       KỸ THUẬT TRIỂN KHAI
+  ======================================================== -->
+  <section id="ky-thuat">
+    <div class="container">
+      <p class="section-label">Kỹ thuật cốt lõi</p>
+      <h2>8 Kỹ thuật AEO & AIEO<br/>quan trọng nhất</h2>
+
+      <div class="techniques-grid">
+
+        <article class="tech-card fade-in">
+          <div class="tech-icon">📋</div>
+          <h3>1. Schema Markup (Structured Data)</h3>
+          <p>Nền tảng của AEO/AIEO. Giúp AI engines hiểu ngữ nghĩa nội dung.</p>
+          <ul class="tech-tips">
+            <li>Implement FAQPage schema cho trang Q&A</li>
+            <li>Dùng HowTo schema cho bài hướng dẫn</li>
+            <li>Thêm Article, Person, Organization schema</li>
+            <li>Test bằng Google Rich Results Test</li>
+          </ul>
+        </article>
+
+        <article class="tech-card fade-in">
+          <div class="tech-icon">✍️</div>
+          <h3>2. Nội dung dạng Q&A</h3>
+          <p>Cấu trúc nội dung theo cách AI engines "muốn đọc".</p>
+          <ul class="tech-tips">
+            <li>Heading H2/H3 là câu hỏi cụ thể</li>
+            <li>Trả lời ngay trong 40–60 từ đầu tiên</li>
+            <li>Sử dụng ngôn ngữ tự nhiên, conversational</li>
+            <li>Bao phủ các biến thể câu hỏi (PAA)</li>
+          </ul>
+        </article>
+
+        <article class="tech-card fade-in">
+          <div class="tech-icon">🏆</div>
+          <h3>3. E-E-A-T Signals</h3>
+          <p>Experience, Expertise, Authoritativeness, Trustworthiness — nền tảng tin cậy AI.</p>
+          <ul class="tech-tips">
+            <li>Hiển thị thông tin tác giả rõ ràng</li>
+            <li>Trích dẫn nguồn uy tín (.gov, .edu, .org)</li>
+            <li>Cập nhật ngày tháng chính xác</li>
+            <li>Có author schema với credentials</li>
+          </ul>
+        </article>
+
+        <article class="tech-card fade-in">
+          <div class="tech-icon">⚡</div>
+          <h3>4. Core Web Vitals</h3>
+          <p>Tốc độ và UX ảnh hưởng trực tiếp đến khả năng được AI crawl và index.</p>
+          <ul class="tech-tips">
+            <li>LCP (Largest Contentful Paint) &lt; 2.5s</li>
+            <li>CLS (Cumulative Layout Shift) &lt; 0.1</li>
+            <li>INP (Interaction to Next Paint) &lt; 200ms</li>
+            <li>Tối ưu images: WebP, lazy loading</li>
+          </ul>
+        </article>
+
+        <article class="tech-card fade-in">
+          <div class="tech-icon">🔗</div>
+          <h3>5. Entity & Semantic SEO</h3>
+          <p>AI hiểu "thực thể" thay vì từ khóa đơn thuần.</p>
+          <ul class="tech-tips">
+            <li>Xây dựng Topic Cluster rõ ràng</li>
+            <li>Liên kết nội quan (internal linking) có cấu trúc</li>
+            <li>Tạo Glossary / Định nghĩa cho entity</li>
+            <li>Đăng ký Google Knowledge Panel</li>
+          </ul>
+        </article>
+
+        <article class="tech-card fade-in">
+          <div class="tech-icon">📊</div>
+          <h3>6. Dữ liệu & Nghiên cứu gốc</h3>
+          <p>AI ưu tiên trích dẫn nguồn có dữ liệu, khảo sát, nghiên cứu độc đáo.</p>
+          <ul class="tech-tips">
+            <li>Công bố số liệu khảo sát, case study</li>
+            <li>Tạo infographics có thể embed</li>
+            <li>Đưa ra quan điểm expert độc đáo</li>
+            <li>Được báo chí/blog lớn trích dẫn</li>
+          </ul>
+        </article>
+
+        <article class="tech-card fade-in">
+          <div class="tech-icon">🌐</div>
+          <h3>7. Multi-format Content</h3>
+          <p>AI Overviews tổng hợp từ nhiều định dạng khác nhau.</p>
+          <ul class="tech-tips">
+            <li>Video + transcript đầy đủ</li>
+            <li>Podcast với show notes chi tiết</li>
+            <li>Bảng biểu, so sánh có cấu trúc</li>
+            <li>Ảnh có alt text mô tả chi tiết</li>
+          </ul>
+        </article>
+
+        <article class="tech-card fade-in">
+          <div class="tech-icon">🤖</div>
+          <h3>8. AI Crawlability</h3>
+          <p>Đảm bảo AI bots có thể truy cập và đọc nội dung của bạn.</p>
+          <ul class="tech-tips">
+            <li>robots.txt không block AI crawlers</li>
+            <li>XML Sitemap cập nhật thường xuyên</li>
+            <li>Trang HTML thuần, không JS-only</li>
+            <li>Cho phép GPTBot, ClaudeBot, PerplexityBot</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FAQ – AIEO IN ACTION
+  ======================================================== -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <p class="section-label">FAQ</p>
+      <h2>Câu hỏi thường gặp</h2>
+
+      
+
+      <div class="faq-grid" role="list">
+
+        <div class="faq-item" role="listitem">
+          <div class="faq-q" tabindex="0" onclick="toggleFAQ(this)" onkeypress="if(event.key==='Enter')toggleFAQ(this)">
+            <span>AEO là gì và tại sao nó quan trọng?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-a">
+            AEO (Answer Engine Optimization) là kỹ thuật tối ưu hóa nội dung website để được trích dẫn trực tiếp trong phần trả lời của các search engine. Với xu hướng zero-click search (58% tìm kiếm không có click), AEO giúp brand xuất hiện ngay trong câu trả lời mà không cần người dùng click vào link.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <div class="faq-q" tabindex="0" onclick="toggleFAQ(this)" onkeypress="if(event.key==='Enter')toggleFAQ(this)">
+            <span>AIEO khác AEO như thế nào?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-a">
+            AEO tập trung vào Featured Snippets và Answer Boxes của search engine truyền thống. AIEO mở rộng sang các AI Language Models (ChatGPT, Gemini, Claude, Perplexity) — những platform đang trả lời trực tiếp mà không chuyển hướng người dùng. AIEO đòi hỏi E-E-A-T mạnh hơn và nội dung chuyên sâu hơn.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <div class="faq-q" tabindex="0" onclick="toggleFAQ(this)" onkeypress="if(event.key==='Enter')toggleFAQ(this)">
+            <span>Schema Markup có bắt buộc cho AIEO không?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-a">
+            Schema Markup không bắt buộc nhưng tăng đáng kể khả năng được AI trích dẫn. Nghiên cứu cho thấy trang có FAQPage schema được xuất hiện trong AI Overviews nhiều hơn 3 lần. Các schema quan trọng: Article, FAQPage, HowTo, Organization, Person.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <div class="faq-q" tabindex="0" onclick="toggleFAQ(this)" onkeypress="if(event.key==='Enter')toggleFAQ(this)">
+            <span>Làm thế nào đo lường hiệu quả AIEO?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-a">
+            Đo lường AIEO bằng: (1) Theo dõi brand mention trong AI responses bằng công cụ như Semrush AI Toolkit; (2) Kiểm tra manual bằng cách hỏi ChatGPT/Perplexity về chủ đề của bạn; (3) Theo dõi Google AI Overviews appearances trong Search Console; (4) Monitor referral traffic từ AI platforms.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <div class="faq-q" tabindex="0" onclick="toggleFAQ(this)" onkeypress="if(event.key==='Enter')toggleFAQ(this)">
+            <span>robots.txt nên cấu hình thế nào cho AIEO?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-a">
+            Để tối ưu AIEO, không nên block các AI crawlers. Bạn có thể cho phép: GPTBot (ChatGPT), Google-Extended (Gemini/SGE), ClaudeBot (Anthropic), PerplexityBot, Applebot-Extended. Nếu muốn kiểm soát, chỉ block các bot không liên quan đến AI search.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       TRIỂN KHAI TỪNG BƯỚC
+  ======================================================== -->
+  <section id="trien-khai">
+    <div class="container">
+      <p class="section-label">Hướng dẫn</p>
+      <h2>Triển khai AIEO<br/>từng bước thực tế</h2>
+
+      <div class="steps-grid fade-in">
+
+        <div class="step-row">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>Thêm Schema JSON-LD vào &lt;head&gt;</h3>
+            <p>Đây là bước quan trọng nhất. Thêm FAQPage schema cho mọi trang có Q&A.</p>
+            <div class="code-block">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Câu hỏi của bạn ở đây?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Câu trả lời ngắn gọn, súc tích, 40-60 từ."
+    }
+  }]
+}
+&lt;/script&gt;</div>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Cấu hình robots.txt cho AI crawlers</h3>
+            <p>Đảm bảo AI bots có quyền truy cập website của bạn.</p>
+            <div class="code-block"># robots.txt – Cho phép AI search crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Sitemap
+Sitemap: https://yoursite.com/sitemap.xml</div>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>Viết nội dung theo chuẩn AEO</h3>
+            <p>Cấu trúc bài viết để AI engines dễ "hiểu" và trích dẫn.</p>
+            <div class="code-block">&lt;!-- ✅ Cấu trúc ĐÚNG cho AEO/AIEO --&gt;
+&lt;h2&gt;[Câu hỏi cụ thể] là gì?&lt;/h2&gt;
+&lt;p&gt;[Câu trả lời trong 40-60 từ, rõ ràng, súc tích.]&lt;/p&gt;
+&lt;p&gt;[Giải thích chi tiết hơn với ví dụ...]&lt;/p&gt;
+
+&lt;!-- ❌ Tránh heading mơ hồ --&gt;
+&lt;h2&gt;Giới thiệu&lt;/h2&gt;
+&lt;h2&gt;Nội dung chính&lt;/h2&gt;</div>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>Thêm Open Graph & Meta Tags</h3>
+            <p>Social signals và meta data giúp AI hiểu context của trang.</p>
+            <div class="code-block">&lt;meta name="description" content="Mô tả 150-160 ký tự,
+  chứa câu trả lời ngắn gọn cho câu hỏi chính." /&gt;
+&lt;meta property="og:title" content="Tiêu đề rõ ràng" /&gt;
+&lt;meta property="og:type" content="article" /&gt;
+&lt;meta name="author" content="Tên tác giả có uy tín" /&gt;
+&lt;link rel="canonical" href="https://yoursite.com/page/" /&gt;</div>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-num">05</div>
+          <div class="step-content">
+            <h3>Kiểm tra và đo lường</h3>
+            <p>Theo dõi hiệu quả AEO/AIEO định kỳ.</p>
+            <div class="code-block"># Công cụ kiểm tra AEO/AIEO
+1. Google Search Console → Performance → Search type: Web
+   → Lọc theo "position 0" appearances
+
+2. Google Rich Results Test:
+   https://search.google.com/test/rich-results
+
+3. Schema Markup Validator:
+   https://validator.schema.org/
+
+4. Test manual: Hỏi ChatGPT, Perplexity, Gemini
+   về chủ đề của bạn → xem có trích dẫn không</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       CHECKLIST
+  ======================================================== -->
+  <section style="background:var(--cream);">
+    <div class="container">
+      <p class="section-label">Checklist</p>
+      <h2>AEO & AIEO Checklist<br/>hoàn chỉnh</h2>
+
+      <div class="checklist-grid fade-in">
+        <div class="checklist-group">
+          <h3>📋 AEO Checklist</h3>
+          <ul class="checklist">
+            <li><span class="check">✓</span>FAQPage Schema Markup</li>
+            <li><span class="check">✓</span>HowTo Schema cho bài hướng dẫn</li>
+            <li><span class="check">✓</span>Heading H2/H3 là câu hỏi rõ ràng</li>
+            <li><span class="check">✓</span>Câu trả lời ngay đầu đoạn (40–60 từ)</li>
+            <li><span class="check">✓</span>Bảng biểu, bullet list có cấu trúc</li>
+            <li><span class="check">✓</span>Meta description chứa câu trả lời chính</li>
+            <li><span class="check">✓</span>Breadcrumb Schema</li>
+            <li><span class="check">✓</span>Core Web Vitals đạt chuẩn</li>
+            <li><span class="check">✓</span>HTTPS và không có lỗi crawl</li>
+            <li><span class="check">✓</span>Mobile-friendly 100%</li>
+          </ul>
+        </div>
+        <div class="checklist-group">
+          <h3>🤖 AIEO Checklist</h3>
+          <ul class="checklist">
+            <li><span class="check">✓</span>Article schema với dateModified</li>
+            <li><span class="check">✓</span>Person/Organization schema (E-E-A-T)</li>
+            <li><span class="check">✓</span>Trích dẫn nguồn uy tín trong nội dung</li>
+            <li><span class="check">✓</span>Cho phép GPTBot, ClaudeBot trong robots.txt</li>
+            <li><span class="check">✓</span>Nội dung chuyên sâu >1500 từ/bài quan trọng</li>
+            <li><span class="check">✓</span>Đề cập đến brand được các nguồn lớn trích dẫn</li>
+            <li><span class="check">✓</span>Video/media có transcript đầy đủ</li>
+            <li><span class="check">✓</span>Cập nhật nội dung định kỳ (dateModified)</li>
+            <li><span class="check">✓</span>XML Sitemap cập nhật thường xuyên</li>
+            <li><span class="check">✓</span>Không dùng JS để render nội dung chính</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       HOSTING
+  ======================================================== -->
+  <section id="hosting">
+    <div class="container">
+      <p class="section-label">Hosting</p>
+      <h2>Lựa chọn hosting<br/>cho website AEO/AIEO</h2>
+      <p style="color:var(--muted);margin-top:12px;">Hosting ảnh hưởng trực tiếp đến Core Web Vitals — yếu tố quan trọng của AIEO.</p>
+
+      <div class="hosting-grid fade-in">
+
+        <div class="host-card">
+          <div class="host-badge">Free · Recommended</div>
+          <h3>GitHub Pages</h3>
+          <p>Hosting miễn phí lý tưởng cho static website. CDN toàn cầu, HTTPS tự động.</p>
+          <ul>
+            <li>Miễn phí hoàn toàn</li>
+            <li>Custom domain hỗ trợ</li>
+            <li>HTTPS tự động (Let's Encrypt)</li>
+            <li>Deploy qua git push</li>
+          </ul>
+        </div>
+
+        <div class="host-card">
+          <div class="host-badge">Free · Fast</div>
+          <h3>Vercel / Netlify</h3>
+          <p>Edge network toàn cầu, hiệu suất cao, phù hợp cho Next.js, React.</p>
+          <ul>
+            <li>Edge CDN 100+ locations</li>
+            <li>CI/CD tự động từ GitHub</li>
+            <li>Analytics tích hợp</li>
+            <li>Preview deployments</li>
+          </ul>
+        </div>
+
+        <div class="host-card">
+          <div class="host-badge">Paid · Enterprise</div>
+          <h3>Cloudflare Pages</h3>
+          <p>Hiệu suất tốt nhất với Cloudflare network, phù hợp scale lớn.</p>
+          <ul>
+            <li>Cloudflare global network</li>
+            <li>DDoS protection tích hợp</li>
+            <li>Web Analytics miễn phí</li>
+            <li>Workers cho dynamic content</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FOOTER
+  ======================================================== -->
+  <footer>
+    <div class="container">
+      <p>
+        <strong>SEO Academy VN</strong> · Bài tập 04: AEO, AIEO & Kỹ thuật triển khai
+      </p>
+      <p style="margin-top:8px;">
+        Website này áp dụng: FAQPage Schema · Article Schema · HowTo Schema · E-E-A-T Signals · Core Web Vitals Optimized
+      </p>
+      <p style="margin-top:8px; font-size:.8rem;">
+        Cập nhật: <time datetime="2025-05-18">18/05/2025</time> · Lê Quốc Hưng - DH52300741 - D23_TH06
+      </p>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="./main.js"></script>
+</body>
+</html>
