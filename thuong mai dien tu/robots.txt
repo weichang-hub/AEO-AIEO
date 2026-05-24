@@ -1,0 +1,24 @@
+# robots.txt – SEO Academy VN
+
+# Cho phép tất cả bot thông thường
+User-agent: *
+Allow: /
+
+# Cho phép AI search crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap
+Sitemap: https://aeo-aieo-dh52300741.onrender.com/sitemap.xml
